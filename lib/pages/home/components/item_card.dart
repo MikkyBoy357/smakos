@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/models/Product.dart';
+import 'package:online_shopping/models/Product.dart';
 
 import '../../../constants.dart';
 
@@ -27,8 +27,11 @@ class ItemCard extends StatelessWidget {
               // height: 180,
               // width: 160,
               decoration: BoxDecoration(
-                color: product.color,
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: Colors.grey,
+                ),
               ),
               child: Hero(
                 tag: "${product.id}",

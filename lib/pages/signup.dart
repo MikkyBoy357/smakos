@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:online_shopping/pages/login.dart';
+import 'package:online_shopping/size_config.dart';
 import 'package:online_shopping/widgets/custom_button.dart';
 import 'package:online_shopping/widgets/custom_text_feld.dart';
 
 class SignupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -18,7 +21,7 @@ class SignupPage extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 70,
+            height: SizeConfig.height(53.9),
             color: Color(0xFFFAFBFD),
             child: Padding(
               padding: const EdgeInsets.only(top: 30.0),
@@ -46,7 +49,7 @@ class SignupPage extends StatelessWidget {
               shrinkWrap: true,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height - 220,
+                  height: SizeConfig.height(377.3),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -121,6 +124,16 @@ class SignupPage extends StatelessWidget {
                                 backgroundColour: Colors.red,
                                 shadowColour:
                                     Color(0xff866DC9).withOpacity(0.16),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return Login();
+                                      },
+                                    ),
+                                  );
+                                },
                               ),
                             ),
                           ],
@@ -135,7 +148,7 @@ class SignupPage extends StatelessWidget {
           Column(
             children: [
               SizedBox(
-                height: 40,
+                height: SizeConfig.height(40.8),
                 child: Divider(height: 10),
               ),
               Text(
