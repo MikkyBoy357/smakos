@@ -63,7 +63,7 @@ List<Product> products = [
   ),
   Product(
     id: 6,
-    title: "Office Code",
+    title: "Cross Shoulder",
     price: 234,
     size: 12,
     description: dummyText,

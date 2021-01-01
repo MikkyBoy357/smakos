@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:online_shopping/constants.dart';
+import 'package:online_shopping/pages/cart/cart.dart';
 import 'package:online_shopping/pages/home/components/body.dart';
 import 'package:online_shopping/size_config.dart';
 import 'package:online_shopping/widgets/custom_text_feld.dart';
@@ -99,7 +99,14 @@ class HomeScreen extends StatelessWidget {
             Icons.shopping_cart_outlined,
             size: 35,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) {
+                return CartScreen();
+              }),
+            );
+          },
         ),
         SizedBox(width: kDefaultPaddin / 2)
       ],

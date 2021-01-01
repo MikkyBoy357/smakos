@@ -18,7 +18,7 @@ class Body extends StatelessWidget {
             children: [
               Container(
                 // height: SizeConfig.height(700.3),
-                height: MediaQuery.of(context).size.height,
+                height: MediaQuery.of(context).size.height + 100,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[

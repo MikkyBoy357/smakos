@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:online_shopping/constants.dart';
 import 'package:online_shopping/models/Product.dart';
+import 'package:online_shopping/pages/cart/cart.dart';
 import 'package:online_shopping/pages/details/components/body.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -35,13 +36,16 @@ class DetailsScreen extends StatelessWidget {
           icon: SvgPicture.asset("assets/icons/search.svg"),
           onPressed: () {},
         ),
-        // IconButton(
-        //   icon: SvgPicture.asset("assets/icons/cart.svg"),
-        //   onPressed: () {},
-        // ),
         IconButton(
           icon: SvgPicture.asset("assets/icons/cart.svg"),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) {
+                return CartScreen();
+              }),
+            );
+          },
         ),
         SizedBox(width: kDefaultPaddin / 2)
       ],
