@@ -96,8 +96,8 @@ class _CartCardState extends State<CartCard> {
                         ),
                         Divider(
                           thickness: 1,
-                          indent: 10,
-                          endIndent: 10,
+                          indent: 15,
+                          endIndent: 15,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -129,7 +129,9 @@ class _CartCardState extends State<CartCard> {
                                     ),
                                     FlatButton(
                                       // height: 10,
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        // Delete item
+                                      },
                                       child: Row(
                                         children: [
                                           Icon(
