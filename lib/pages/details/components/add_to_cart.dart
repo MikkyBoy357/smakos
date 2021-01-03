@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:online_shopping/models/Product.dart';
+import 'package:online_shopping/pages/cart/cart.dart';
 
 import '../../../constants.dart';
 
@@ -33,7 +34,14 @@ class AddToCart extends StatelessWidget {
                 "assets/icons/add_to_cart.svg",
                 color: product.color,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return CartScreen();
+                  }),
+                );
+              },
             ),
           ),
           Expanded(
