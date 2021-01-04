@@ -26,19 +26,21 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Column(children: [
-                  Icon(
-                    Icons.home,
-                    color: Colors.orange,
-                  ),
-                  Text(
-                    'Home',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.orange,
+                Column(
+                  children: [
+                    Icon(
+                      Icons.home,
+                      color: Colors.red,
                     ),
-                  )
-                ]),
+                    Text(
+                      'Home',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.red,
+                      ),
+                    )
+                  ],
+                ),
                 Column(
                   children: [
                     Icon(Icons.list_alt_rounded),
@@ -66,13 +68,15 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                Column(children: [
-                  Icon(Icons.feedback_outlined),
-                  Text(
-                    'Feedback',
-                    style: TextStyle(fontSize: 12),
-                  )
-                ]),
+                Column(
+                  children: [
+                    Icon(Icons.feedback_outlined),
+                    Text(
+                      'Feedback',
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                ),
               ],
             ),
           ],

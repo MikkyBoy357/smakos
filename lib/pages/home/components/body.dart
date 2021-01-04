@@ -15,6 +15,7 @@ class Body extends StatelessWidget {
       children: [
         Flexible(
           child: ListView(
+            shrinkWrap: false,
             children: [
               Container(
                 // height: SizeConfig.height(700.3),

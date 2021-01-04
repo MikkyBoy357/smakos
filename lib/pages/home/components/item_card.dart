@@ -47,9 +47,23 @@ class ItemCard extends StatelessWidget {
               style: TextStyle(color: kTextLightColor),
             ),
           ),
-          Text(
-            "\$${product.price}",
-            style: TextStyle(fontWeight: FontWeight.bold),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "\$${product.price}",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Row(
+                children: [
+                  Icon(Icons.star, size: 20, color: Colors.red),
+                  Icon(Icons.star, size: 20, color: Colors.red),
+                  Icon(Icons.star, size: 20, color: Colors.red),
+                  Icon(Icons.star_outline, size: 20, color: Colors.red),
+                  Icon(Icons.star_outline, size: 20, color: Colors.red),
+                ],
+              ),
+            ],
           )
         ],
       ),
