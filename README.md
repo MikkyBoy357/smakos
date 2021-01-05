@@ -21,6 +21,6 @@ Shop online and save some money.
 **Michael Olusegun**
 
 
-<a href="https://www.buymeacoffee.com/mikkyboy357" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 109px !important;" ></a>
+<a href="https://www.patreon.com/mikkyboy357" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 109px !important;" ></a>
 
 
