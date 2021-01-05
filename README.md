@@ -14,7 +14,7 @@ Shop online and save some money.
 
 <img src="screenshots/home.png" width="300"/> <img src="screenshots/cart.png" width="300"/>
 <img src="screenshots/details.png" width="300"/> <img src="screenshots/signup.png" width="300"/>
-<img src="screenshots/login" width="300"/>
+<img src="screenshots/login.png" width="300"/>
 
 
 ## 🤓 Author(s)
