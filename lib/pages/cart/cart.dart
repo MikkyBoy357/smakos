@@ -27,61 +27,6 @@ class _CartScreenState extends State<CartScreen> {
         },
       ),
       bottomNavigationBar: CheckoutCard(),
-      // Container(
-      //   height: SizeConfig.height(50),
-      //   decoration: BoxDecoration(
-      //     color: Colors.white,
-      //     border: Border.all(
-      //       color: Colors.grey[200],
-      //     ),
-      //   ),
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     children: [
-      //       Row(
-      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //         children: [
-      //           SizedBox(
-      //             width: MediaQuery.of(context).size.width / 2,
-      //             height: SizeConfig.height(48.6),
-      //             child: FlatButton(
-      //               shape: RoundedRectangleBorder(
-      //                   borderRadius: BorderRadius.circular(18)),
-      //               color: Colors.red,
-      //               onPressed: () {},
-      //               child: Text(
-      //                 "Buy  Now".toUpperCase(),
-      //                 style: TextStyle(
-      //                   fontSize: 17,
-      //                   fontWeight: FontWeight.bold,
-      //                   color: Colors.white,
-      //                 ),
-      //               ),
-      //             ),
-      //           ),
-      //           SizedBox(
-      //             width: MediaQuery.of(context).size.width / 2.5,
-      //             height: SizeConfig.height(48.6),
-      //             child: FlatButton(
-      //               shape: RoundedRectangleBorder(
-      //                   borderRadius: BorderRadius.circular(18)),
-      //               color: Colors.red,
-      //               onPressed: () {},
-      //               child: Text(
-      //                 "Buy  Now".toUpperCase(),
-      //                 style: TextStyle(
-      //                   fontSize: 17,
-      //                   fontWeight: FontWeight.bold,
-      //                   color: Colors.white,
-      //                 ),
-      //               ),
-      //             ),
-      //           ),
-      //         ],
-      //       ),
-      //     ],
-      //   ),
-      // ),
     );
   }
 }

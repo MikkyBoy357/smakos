@@ -95,7 +95,7 @@ class HomeScreen extends StatelessWidget {
           Icons.search,
           color: Colors.black,
         ),
-        hintText: 'Search on Smakos',
+        hintText: 'Search on SMAKOS',
       ),
       actions: <Widget>[
         IconButton(
@@ -106,9 +106,11 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) {
-                return CartScreen();
-              }),
+              MaterialPageRoute(
+                builder: (context) {
+                  return CartScreen();
+                },
+              ),
             );
           },
         ),
