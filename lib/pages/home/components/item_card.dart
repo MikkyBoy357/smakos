@@ -20,22 +20,24 @@ class ItemCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Expanded(
-            child: Container(
-              padding: EdgeInsets.all(kDefaultPaddin),
-              // For  demo we use fixed height  and width
-              // Now we dont need them
-              // height: 180,
-              // width: 160,
-              decoration: BoxDecoration(
-                color: Colors.white,
+            child: Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: Colors.grey,
-                ),
               ),
-              child: Hero(
-                tag: "${product.id}",
-                child: Image.asset(product.image),
+              child: Container(
+                padding: EdgeInsets.all(kDefaultPaddin),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.grey,
+                  ),
+                ),
+                child: Hero(
+                  tag: "${product.id}",
+                  child: Image.asset(product.image),
+                ),
               ),
             ),
           ),
@@ -44,7 +46,10 @@ class ItemCard extends StatelessWidget {
             child: Text(
               // products is out demo list
               product.title,
-              style: TextStyle(color: kTextLightColor),
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           Row(
@@ -52,7 +57,7 @@ class ItemCard extends StatelessWidget {
             children: [
               Text(
                 "\$${product.price}",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                // style: TextStyle(fontWeight: FontWeight.bold),
               ),
               Row(
                 children: [

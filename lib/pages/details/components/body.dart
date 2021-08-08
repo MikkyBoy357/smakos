@@ -17,6 +17,7 @@ class Body extends StatelessWidget {
     // It provide us total height and width
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
+      physics: ClampingScrollPhysics(),
       child: Column(
         children: <Widget>[
           SizedBox(
@@ -40,6 +41,9 @@ class Body extends StatelessWidget {
                   ),
                   child: Column(
                     children: <Widget>[
+                      Container(
+                        height: 20,
+                      ),
                       ColorAndSize(product: product),
                       SizedBox(height: kDefaultPaddin / 2),
                       Description(product: product),

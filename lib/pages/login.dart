@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:online_shopping/pages/home/home_screen.dart';
+import 'package:online_shopping/pages/mainscreen.dart';
 import 'package:online_shopping/widgets/custom_button.dart';
 import 'package:online_shopping/widgets/custom_text_feld.dart';
 
@@ -93,7 +94,7 @@ class Login extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return HomeScreen();
+                          return MainScreen();
                         },
                       ),
                     );

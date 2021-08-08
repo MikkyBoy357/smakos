@@ -76,7 +76,7 @@ class CheckoutCard extends StatelessWidget {
                 height: 40,
                 width: SizeConfig.width(150),
                 decoration: BoxDecoration(
-                  color: Colors.red,
+                  color: Colors.green,
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Center(

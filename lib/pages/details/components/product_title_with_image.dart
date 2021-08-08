@@ -30,31 +30,36 @@ class ProductTitleWithImage extends StatelessWidget {
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: kDefaultPaddin),
-          Row(
-            children: <Widget>[
-              RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(text: "Price\n"),
-                    TextSpan(
-                      text: "\$${product.price}",
-                      style: Theme.of(context).textTheme.headline4.copyWith(
-                          color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: kDefaultPaddin),
-              Expanded(
-                child: Hero(
-                  tag: "${product.id}",
-                  child: Image.asset(
-                    product.image,
-                    fit: BoxFit.fill,
+          Container(
+            height: MediaQuery.of(context).size.height / 3,
+            // color: Colors.blue,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(text: "Price\n"),
+                      TextSpan(
+                        text: "\$${product.price}",
+                        style: Theme.of(context).textTheme.headline4.copyWith(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
                 ),
-              )
-            ],
+                SizedBox(width: kDefaultPaddin),
+                Expanded(
+                  child: Hero(
+                    tag: "${product.id}",
+                    child: Image.asset(
+                      product.image,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
