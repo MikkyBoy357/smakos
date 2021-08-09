@@ -15,6 +15,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: SignupPage(),
+        theme: ThemeData(
+            appBarTheme: AppBarTheme(
+          color: Colors.red,
+        )),
       ),
     );
   }
